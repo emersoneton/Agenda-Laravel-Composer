@@ -11,7 +11,7 @@ class Pessoa extends Model
             'nome'
         ];
 
-    protected $table = 'contatos';
+    protected $table = 'pessoas';
 
     public function telefone(){
 

@@ -18,7 +18,7 @@ class CriaTabelaTelefones extends Migration
             $table->string('ddd');
             $table->string('telefone');
             $table->integer('pessoa_id')->unsigned();
-            $table->foreign('pessoa_id')->references('id')->on('contatos')->onDelete('cascade');
+            $table->foreign('pessoa_id')->references('id')->on('pessoas')->onDelete('cascade');
             $table->timestamps();
         });
     }

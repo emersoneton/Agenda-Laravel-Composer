@@ -27,9 +27,24 @@
                 </div>
             </li>
         </ul>
-    @yield('content')
+      @yield('content')
     </div>
 </nav>
+
+<div class="container">
+    @foreach($pessoas->telefone as $telefones)
+        <div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    {{ $telefones -> nome }}
+                </div>
+                <div class="panel-body">
+                    Panel Content
+                </div>
+            </div>
+        </div>
+    @endforeach
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -10,8 +10,8 @@ class PessoasController extends Controller
 
     public  function index(){
         $list_pessoas = Pessoa::all();
-        return view('contatos.index', [
-            'contatos' => $list_pessoas
+        return view('pessoa.index', [
+            'pessoas' => $list_pessoas
         ]);
     }
 }

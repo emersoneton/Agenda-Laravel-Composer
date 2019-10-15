@@ -17,13 +17,13 @@ Route::get("/", function () {
 
 });
 
-/*Route::group(["prefix" => "pessoas"],function(){
+//Route::group(["prefix" => "pessoas"],function(){
 
-    Route::get("/", "PessoasController@index");
+//    Route::get("/", "PessoasController@index");
 
-});
+//});
 
-
+/*
 
 
 route::group(['prefix' => 'teste'], function (){
